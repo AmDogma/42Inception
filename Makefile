@@ -6,5 +6,5 @@ clean:
 	docker image prune -a
 
 vclean:
-	docker volume rm $$(docker volume ls -q)
+	docker volume rm $(docker volume ls -q)
 	rm -rf /home/emil/data/wordpress_data/* /home/emil/data/mariadb_data/*
